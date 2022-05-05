@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Historic Rochester/Historic Preservation</title>
+    <meta charset="utf-8">
+    <!-- link to the external CSS file for font awesome icon library -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="./W3.CSS_Template_files/w3.css">
+    <script src="https://kit.fontawesome.com/5bd9178fad.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            color: black;
+            margin: 0;
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #f0f5f5;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav-header {
+            background: white;
+            height: 100px;
+            display: flex;
+        }
+
+        .nav-div {
+            margin: auto;
+        }
+
+        .logo-img {
+            width: 120px;
+            margin-left: 20px;
+            border-radius: 50px;
+            border: 5px solid black;
+            box-shadow: 3px 3px gray;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .search-icon {
+            margin: 30px;
+        }
+
+        .nav-bar {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .nav-bar-link {
+            color: #878787;
+            font-size: 24px;
+            padding: 20px;
+        }
+
+        .main-header {
+            background: url("img/h1.jpeg") no-repeat center fixed;
+            background-size: cover;
+            padding: 19%;
+        }
+
+        .main-header-title {
+            text-align: center;
+            font-size: 100px;
+            color: #f7f8f9;
+            text-transform: uppercase;
+            font-weight: normal;
+            text-shadow: 2px 2px 5px darkgrey;
+            margin-top: 0px;
+        }
+
+        .intro {
+            width: 60%;
+            margin: auto;
+        }
+
+        .button {
+            display: block;
+        }
+
+        .box {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            margin-bottom: -18%;
+        }
+
+        .card {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid black;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .footer {
+            height: 40px;
+            background: white;
+            padding: 5px;
+        }
+
+        img{
+            box-shadow: 3px 3px gray;
+        }
+
+        .open{ 
+            color: black;
+            margin-top: -70px;
+            font-size: 20px;
+            padding: 9px;
+            background-color: #f7f8f9;
+            margin-left: 20px;
+            margin-right: 20px;
+            border: transparent solid 2px;
+            border-radius: 5px;
+        }
+        .more-info {
+            font-size: 50px;
+            background-color: rgb(190, 187, 187);
+            margin-left: 10%;
+            margin-right: 10%;
+            border-radius: 5px;
+            border: black solid 2px;
+            padding: 10px;
+        }
+
+        .photo { 
+            border: black solid thick;
+        }
+        .photo.us{
+            margin-bottom: 22%;
+            width: 90%;
+            height: auto;
+        }
+
+        .interior {
+            margin-bottom: 20%;
+        }
+
+        .photo.division {
+            margin-bottom: 12%;
+            height: auto;
+            width: 90%;
+        } 
+
+        .mission {
+            margin-bottom: 43px;
+        }
+
+        .nh {
+            margin-bottom: 10%;
+        }
+
+        .card.two {
+            background-color: rgb(246, 242, 242);
+        }
+
+        .links{
+            font-size: 5px;
+            display: flex;
+            padding-top: 20%;
+        }
+
+        .virtual {
+            margin-left: 2%;
+        }
+
+        .www {
+            margin-left: 29%;
+        }
+
+        a{
+            color: black;
+        }
+
+        a:hover{
+            color: blue;
+        }
+
+        .info{
+            color: rgb(190, 187, 187);
+        }
+
+        .brief{
+            color: black;
+            border: 2px black solid;
+            border-radius: 5px;
+            margin-top: 3%;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: white;
+        }
+
+        .roch{
+            align-items: center;
+            border: black solid thick;
+            margin-top: 2%;
+            width: 50%;
+            height: auto;
+        }
+
+        .called{
+            padding-left: 2%;
+            margin-right: 2%;
+        }
+
+        .org{
+            padding: 10px;
+            font-size: 50px;
+            background-color: rgb(190, 187, 187);
+            margin-left: 10%;
+            margin-right: 10%;
+            border-radius: 5px;
+            border: black solid 2px;
+            margin-bottom: -20px;
+            margin-top: 3%;
+        }
+
+        .history{
+            font-size: 15px;
+            color: rgb(190, 187, 187)
+        }
+
+        .fab{
+             color: white;
+         }
+
+         @media only screen and (max-width:600px) {
+         .box{
+            flex-direction: column;
+            }
+        .links{
+            padding-right: 23%;
+            }
+        .unh{
+            margin-top: 3%;
+        }
+        .unhm{
+            margin-top: 6%;
+        }
+        .roch{
+            width: 90%;
+            height: 90%;
+        }
+        .mw{
+            margin-top: -8%;
+        }
+        .photo.us{
+            margin-bottom: 0%;
+        }
+
+        .interior{
+            margin-bottom: 10%;
+        }
+        .main-header{
+            padding: 15%;
+        }
+        .main-header-title{
+            font-size: 40px;
+            padding-top: 15%;
+        }
+        .act{
+            margin-bottom: -4%;
+        }
+        .act2{
+            padding-bottom: 6%;
+        }
+         }
+
+         .fab{
+             color: white;
+         }
+
+         .h26{
+             width: 40%;
+             height: 40%;
+         }
+
+ 
+    </style>
+</head>
+
+<body class="w3-sand">
+    <div class="w3-top w3-large">
+        <div class="w3-top w3-padding-16 w3-black">
+          <div>
+            <a class="w3-col m2 w3-center w3-button w3-block w3-black nav w3-hide-medium w3-hide-small" href= "index.html">HOME</a>
+          </div>
+          <div>
+            <a class="w3-col m2 w3-center w3-button w3-block w3-black nav w3-hide-small w3-hide-medium" href="index2.html">HISTORIC ROCHESTER</a>
+          </div>
+          <div>
+            <a class="w3-col m2 w3-center w3-button w3-block w3-black nav w3-hide-small w3-hide-medium" href="index3.html">HISTORIC PRESERVATION</a>
+          </div>
+          <div>
+            <a class="w3-col m2 w3-center w3-button w3-block w3-black nav w3-hide-small w3-hide-medium" href="index4.html">HISTORIC DISTRICT</a>
+          </div>
+          <div>
+            <a class="w3-col m2 w3-center w3-button w3-block w3-black nav w3-hide-small w3-hide-medium" href="index5.html">AROUND THE COUNTRY</a>
+          </div>
+          <div>
+            <a href="index.html#where" class="w3-col m2 w3-center w3-button w3-block w3-black w3-hide-small w3-hide-medium">CONTACT US</a>
+          </div>
+          <div class="w3-dropdown-hover w3-hide-large w3-large">
+            <a href="index.html" class="w3-button w3-text-white w3-center">HOME</a>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="index2.html" class="w3-bar-item w3-button w3-center">HISTORIC ROCHESTER</a>
+                <a href="index3.html" class="w3-bar-item w3-button w3-center">HISTORIC PRESERVATION</a>
+                <a href="index4.html" class="w3-bar-item w3-button w3-center">HISTORIC DISTRICT</a>
+                <a href="index5.html" class="w3-bar-item w3-button w3-center">AROUND THE COUNTRY</a>
+                <a href="index.html#where" class="w3-bar-item w3-button w3-center">CONTACT US</a>
+            </div>
+        </div>
+    </div>
+</div>  
+    <div class="main-header">
+        <h1 class="main-header-title w3-text-white w3-jumbo w3-hide-medium w3-hide-small">Historic Preservation Efforts from <br>Around the Country</h1>
+        <h1 class="main-header-title w3-text-white w3-hide-large">Historic Preservation Efforts from Around the Country</h1>
+    </div>
+    <p class="open w3-hide-small w3-hide-medium">This page of the website provides informational resources on historic preservation efforts from the country.</p>
+    <div class="intro">
+    </div>
+    <a href="https://www.achp.gov/digital-library-section-106-landing/national-historic-preservation-act"> <h1 class="org">The National Preservation Act</h1> </a>
+    <div class="brief unhm">
+        <img class="roch" src="img/h25.png" alt= "National Historic Preservation Act">
+        <p class="called act2" > "The NHPA established a partnership between the federal government and state, tribal, and local governments that is supported by federal funding for preservation activities. The National Park Service provides matching grants-in-aid from the Historic Preservation Fund to State Historic Preservation Officers, Tribal Historic Preservation Officers, and local governments certified as having qualified preservation programs. The NHPA also created the ACHP, the first and only federal agency created solely to address historic preservation issues." </p>
+        <a class="history" href="https://www.achp.gov/digital-library-section-106-landing/national-historic-preservation-act"><p class="act">Information sourced from the Advisory Council on Historic Preservation website</p></a>
+        <a class="history" href="https://studylib.net/doc/9609469/national-historic-preservation-act-of-1966"><p>Photo sourced from the the Studylib website</p></a>
+    </div>
+    <h1 class="more-info">Historic Preservation from Different States</h1>
+    <div class="box">
+        <div class="card">
+            <a href="https://www.preservationmass.org/"> <h1>Preservation Massachusetts</h1> </a>
+            <img class="photo h26" src="img/h26.webp" alt="Preservation Massachusetts">
+            <p class="nh">
+                "Preservation Massachusetts educates and empowers people to preserve and reuse historic resources that are important to them and their community. Through our education and advocacy work, we expand alliances that allow preservation to play a vital role in shaping the future of Massachusetts and the places we call home."
+            </p>
+            <a class="info" href="https://www.preservationmass.org/">Information and photo sourced from the Preservation Massachusetts website</a>
+        </div>
+        <div class="card two unh">
+            <a href="https://californiamissionsfoundation.org/about-us/"> <h1>California Missions Foundation</h1> </a>
+            <img class="photo division" src="img/h27.jpeg" alt="California Missions Foundation">
+            <p class="mission mw">
+                "Founded in 1998, the California Missions Foundation was established with the objective of preserving and protecting the missions. The Foundation is the only organization dedicated to the long-term preservation and restoration needs of all California missions and their associated historic and cultural resources for public benefit."
+            </p>
+            <a class="info" href="https://californiamissionsfoundation.org/about-us/">Information and photo sourced from the California Missions Foundation website</a>
+        </div>
+        <div class="card unh">
+            <a href="https://www.thc.texas.gov/about"> <h1>Texas Historical Commission</h1> </a>
+            <img class="photo us" src="img/h28.png" alt= "Texas Historical Commission">
+            <p class="interior"> "The Texas Historical Commission is the state agency for historic preservation". The commission's philosophy is "Our business is to preserve and leverage Texas history for the social and economic benefit of its citizens". 
+            </p>
+            <a class="info" href="https://www.thc.texas.gov/about">Information and photo sourced from the Texas Historical Commission website</a>
+        </div>
+    </div>
+    <div class="links">
+        <a class= "www info" href= "https://www.rochesternh.net/planning-development/slideshows/city-hall-annex-historic-documents-gallery"> <h1 class="w3-small">Main header photo sourced from the Rochesrer Planning website</h1></a>
+       <br>
+        <a class="virtual info" href= "https://www.rochesternh.net/historic-district-commission/pages/virtual-historic-map"> <h1 class="w3-small">Backround photo sourced from the Rochesrer Historic Map website</h1></a>
+    </div>
+    <div class="w3-center w3-black w3-padding-16 w3-large">
+        <a href= "https://www.facebook.com/groups/146756669388765//"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href= "https://twitter.com/rochester_nh"><i class="fab fa-twitter-square fa-2x"></i></a>
+    </div>
+</body>
+
+</html>

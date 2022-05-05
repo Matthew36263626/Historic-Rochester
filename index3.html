@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Historic Rochester/Historic Preservation</title>
+    <meta charset="utf-8">
+    <!-- link to the external CSS file for font awesome icon library -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="./W3.CSS_Template_files/w3.css">
+    <script src="https://kit.fontawesome.com/5bd9178fad.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            color: black;
+            margin: 0;
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #f0f5f5;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav-header {
+            background: white;
+            height: 100px;
+            display: flex;
+        }
+
+        .nav-div {
+            margin: auto;
+        }
+
+        .logo-img {
+            width: 120px;
+            margin-left: 20px;
+            border-radius: 50px;
+            border: 5px solid black;
+            box-shadow: 3px 3px gray;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .search-icon {
+            margin: 30px;
+        }
+
+        .nav-bar {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .nav-bar-link {
+            color: #878787;
+            font-size: 24px;
+            padding: 20px;
+        }
+
+        .main-header {
+            background: url("img/h1.jpeg") no-repeat center fixed;
+            background-size: cover;
+            padding: 19%;
+        }
+
+        .main-header-title {
+            text-align: center;
+            font-size: 100px;
+            color: #f7f8f9;
+            text-transform: uppercase;
+            font-weight: normal;
+            text-shadow: 2px 2px 5px darkgrey;
+            margin-top: 0px;
+        }
+
+        .intro {
+            width: 60%;
+            margin: auto;
+        }
+
+        .button {
+            display: block;
+        }
+
+        .box {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            margin-bottom: -18%;
+        }
+
+        .card {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid black;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .footer {
+            height: 40px;
+            background: white;
+            padding: 5px;
+        }
+
+        img{
+            box-shadow: 3px 3px gray;
+        }
+
+        .open{ 
+            color: black;
+            margin-top: -70px;
+            font-size: 20px;
+            padding: 9px;
+            background-color: #f7f8f9;
+            margin-left: 20px;
+            margin-right: 20px;
+            border: transparent solid 2px;
+            border-radius: 5px;
+        }
+        .more-info {
+            font-size: 50px;
+            background-color: rgb(190, 187, 187);
+            margin-left: 10%;
+            margin-right: 10%;
+            border-radius: 5px;
+            border: black solid 2px;
+            padding: 10px;
+        }
+
+        .photo { 
+            border: black solid thick;
+        }
+        .photo.us{
+            margin-bottom: 1%;
+            width: 80%;
+            height: auto;
+        }
+
+        .interior {
+            margin-bottom: 10%;
+        }
+
+        .photo.division {
+            margin-bottom: 20%;
+        } 
+
+        .mission {
+            margin-bottom: 43px;
+        }
+
+        .nh {
+            margin-bottom: 28px;
+        }
+
+        .card.two {
+            background-color: rgb(246, 242, 242);
+        }
+
+        .links{
+            font-size: 5px;
+            display: flex;
+            padding-top: 20%;
+        }
+
+        .virtual {
+            margin-left: 2%;
+        }
+
+        .www {
+            margin-left: 29%;
+        }
+
+        a{
+            color: black;
+        }
+
+        a:hover{
+            color: blue;
+        }
+
+        .info{
+            color: rgb(190, 187, 187);
+        }
+
+        .brief{
+            color: black;
+            border: 2px black solid;
+            border-radius: 5px;
+            margin-top: 3%;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: white;
+        }
+
+        .roch{
+            align-items: center;
+            border: black solid thick;
+            margin-top: 2%;
+            width: 50%;
+            height: auto;
+        }
+
+        .called{
+            padding-left: 2%;
+            margin-right: 2%;
+        }
+
+        .org{
+            padding: 10px;
+            font-size: 50px;
+            background-color: rgb(190, 187, 187);
+            margin-left: 10%;
+            margin-right: 10%;
+            border-radius: 5px;
+            border: black solid 2px;
+            margin-bottom: -20px;
+            margin-top: 3%;
+        }
+
+        .history{
+            font-size: 15px;
+            color: rgb(190, 187, 187)
+        }
+
+        .fab{
+             color: white;
+         }
+
+         @media only screen and (max-width:600px) {
+         .box{
+            flex-direction: column;
+            }
+        .links{
+            padding-right: 23%;
+            }
+        .unh{
+            margin-top: 3%;
+        }
+        .unhm{
+            margin-top: 6%;
+        }
+        .roch{
+            width: 90%;
+            height: 90%;
+        }
+        .mw{
+            margin-top:-15%;
+        }
+        .main-header{
+            padding: 15%;
+        }
+        .main-header-title{
+            font-size: 48px;
+            padding-top: 15%;
+        }
+        .nh{
+            padding-bottom: 3%;
+        }
+        .called{
+            margin-bottom: 8%;
+        }
+         }
+
+
+         .fab{
+             color: white;
+         }
+    </style>
+</head>
+
+<body class="w3-sand">
+    <div class="w3-top w3-large">
+        <div class="w3-top w3-padding-16 w3-black">
+          <div>
+            <a class="w3-col m2 w3-center w3-button w3-block w3-black nav w3-hide-medium w3-hide-small" href= "index.html">HOME</a>
+          </div>
+          <div>
+            <a class="w3-col m2 w3-center w3-button w3-block w3-black nav w3-hide-small w3-hide-medium" href="index2.html">HISTORIC ROCHESTER</a>
+          </div>
+          <div>
+            <a class="w3-col m2 w3-center w3-button w3-block w3-black nav w3-hide-small w3-hide-medium" href="index3.html">HISTORIC PRESERVATION</a>
+          </div>
+          <div>
+            <a class="w3-col m2 w3-center w3-button w3-block w3-black nav w3-hide-small w3-hide-medium" href="index4.html">HISTORIC DISTRICT</a>
+          </div>
+          <div>
+            <a class="w3-col m2 w3-center w3-button w3-block w3-black nav w3-hide-small w3-hide-medium" href="index5.html">AROUND THE COUNTRY</a>
+          </div>
+          <div>
+            <a href="index.html#where" class="w3-col m2 w3-center w3-button w3-block w3-black w3-hide-small w3-hide-medium">CONTACT US</a>
+          </div>
+            <div class="w3-dropdown-hover w3-hide-large w3-large">
+                <a href="index.html" class="w3-button w3-text-white w3-center">HOME</a>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="index2.html" class="w3-bar-item w3-button w3-center">HISTORIC ROCHESTER</a>
+                    <a href="index3.html" class="w3-bar-item w3-button w3-center">HISTORIC PRESERVATION</a>
+                    <a href="index4.html" class="w3-bar-item w3-button w3-center">HISTORIC DISTRICT</a>
+                    <a href="index5.html" class="w3-bar-item w3-button w3-center">AROUND THE COUNTRY</a>
+                    <a href="index.html#where" class="w3-bar-item w3-button w3-center">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="main-header">
+        <h1 class="main-header-title w3-text-white w3-jumbo w3-hide-medium w3-hide-small">Historic Preservation</h1>
+        <h1 class="main-header-title w3-text-white w3-hide-large">Historic Preservation</h1>
+    </div>
+    <p class="open w3-hide-small w3-hide-medium">This page of the website provides informational resources on historic preservation and a few organizations that work in the field of historic preservation.</p>
+    <div class="intro">
+    </div>
+    <a href="https://www.doi.gov/pam/asset-management/historic-preservation"> <h1 class="org">What is Historic Preservation?</h1> </a>
+    <div class="brief unhm">
+        <img class="roch" src="img/h12.jpeg" alt= "Rochester">
+        <p class="called" > "Historic preservation is a conversation with our past about our future. It provides us with opportunities to ask, "What is important in our history?" and "What parts of our past should we preserve for the future?" Through historic preservation, we look at history in different ways, ask questions of the past, and learn new things about our history and ourselves. Historic preservation is an important way for us to transmit our understanding of the past to future generations." </p>
+        <p><a class="history" href="https://www.doi.gov/pam/asset-management/historic-preservation">Information and photo sourced from the the U.S. Department of the Interior website</a></p>
+    </div>
+    <h1 class="more-info">Historic Preservation Resources</h1>
+    <div class="box">
+        <div class="card">
+            <a href="https://nhpreservation.org/"> <h1> NH Historic Preservation Alliance</h1> </a>
+            <img class="photo" src="img/h6.jpeg" alt="NH Historic Preservation Alliance logo">
+            <p class="nh">
+                "The New Hampshire Preservation Alliance was founded in 1985 as Inherit New Hampshire, a statewide non-profit, membership-based organization.  Through leadership, education, and advocacy, it helps people preserve historic buildings, landscapes and communities".
+            </p>
+            <a class="info" href="https://nhpreservation.org/">Information and photo sourced from the NH Historic Preservation Alliance website</a>
+        </div>
+        <div class="card two unh">
+            <a href="https://www.nh.gov/nhdhr/"> <h1>NH Division of Historical Resources</h1> </a>
+            <img class="photo division" src="img/h7.jpeg" alt="Old barn">
+            <p class="mission mw">
+                "The mission of the Division of Historical Resources is to preserve and celebrate New Hampshire’s irreplaceable historic resources through programs and services that provide education, stewardship, and protection".
+            </p>
+            <a class="info" href="https://www.nh.gov/nhdhr/">Information and photo sourced from the NH Division of Historical Resources website</a>
+        </div>
+        <div class="card unh">
+            <a href="https://www.doi.gov/library/internet/historic"> <h1>US Department of the Interior</h1> </a>
+            <img class="photo us" src="img/h8.png" alt= "US Department of the Interior logo">
+            <p class="interior"> This resource provides links to the National Park Service programs and publications, other interesting resources, private organizations and directories of internet sites on historic preservation.
+            </p>
+            <a class="info" href="https://www.doi.gov/library/internet/historic">Information and photo sourced from the US Department of the Interior website</a>
+        </div>
+    </div>
+    <div class="links">
+        <a class= "www info" href= "https://www.rochesternh.net/planning-development/slideshows/city-hall-annex-historic-documents-gallery"> <h1 class="w3-small">Main header photo sourced from the Rochesrer Planning website</h1></a>
+       <br>
+        <a class="virtual info" href= "https://www.rochesternh.net/historic-district-commission/pages/virtual-historic-map"> <h1 class="w3-small">Backround photo sourced from the Rochesrer Historic Map website</h1></a>
+    </div>
+    <div class="w3-center w3-black w3-padding-16 w3-large">
+        <a href= "https://www.facebook.com/groups/146756669388765//"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href= "https://twitter.com/rochester_nh"><i class="fab fa-twitter-square fa-2x"></i></a>
+    </div>
+</body>
+
+</html>

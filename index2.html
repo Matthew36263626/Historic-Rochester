@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Historic Rochester</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <script src="https://kit.fontawesome.com/5bd9178fad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            color: black;
+            margin: 0;
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #f0f5f5;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav-header {
+            background: white;
+            height: 100px;
+            display: flex;
+        }
+
+        .nav-div {
+            margin: auto;
+        }
+
+        .logo-img {
+            width: 120px;
+            margin-left: 20px;
+            border-radius: 50px;
+            border: 5px solid black;
+            box-shadow: 3px 3px gray;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .search-icon {
+            margin: 30px;
+        }
+
+        .nav-bar {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .nav-bar-link {
+            color: #878787;
+            font-size: 24px;
+            padding: 20px;
+        }
+
+        .main-header {
+            background: url("img/h1.jpeg") no-repeat center fixed;
+            background-size: cover;
+            padding: 19%; 
+        }
+
+        .main-header-title {
+            text-align: center;
+            font-size: 100px;
+            color: #f7f8f9;
+            text-transform: uppercase;
+            font-weight: normal;
+            text-shadow: 2px 2px 5px darkgrey;
+            margin-top: 0px;
+        }
+
+        .intro {
+            width: 60%;
+            margin: auto;
+        }
+
+        .button {
+            display: block;
+        }
+
+        .box {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            margin-bottom: -18%;
+        }
+
+        .card {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid black;
+            background-color: white;
+            border-radius: 5px; 
+            
+        }
+
+        .footer {
+            height: 40px;
+            background: white;
+        }
+
+        img{
+            box-shadow: 3px 3px gray;
+        }
+
+        .open{ 
+            color: black;
+            margin-top: -70px;
+            font-size: 20px;
+            padding: 9px;
+            background-color: #f0f5f5;
+            margin-left: 40px;
+            margin-right: 40px;
+            border: transparent solid 2px;
+            border-radius: 5px;
+        }
+
+        .more-info {
+            font-size: 50px;
+            background-color: rgb(190, 187, 187);
+            margin-left: 10%;
+            margin-right: 10%;
+            border-radius: 5px;
+            border: black solid 2px;
+            padding: 10px;
+        }
+
+        .photo { 
+            border: black solid thick;
+        }
+
+        .this {
+            margin-top: 145px;
+            margin-bottom: 12%;
+        }
+
+        .plan {
+            margin-bottom: 7%;
+            margin-top: 21px;
+        }
+
+        .photo.h4{
+            margin-top: 13%;
+        }
+
+        .photo.h5 {
+            margin-top: 0;
+            width: auto;
+            height: 40%;
+            margin-bottom: 7px;
+        }
+        .card.two {
+            background-color: rgb(246, 242, 242);
+        }
+
+        .links1{
+            font-size: 2px;
+            display: flex;
+            padding-top: 20%;
+        }
+        .virtual {
+            margin-left: 2%;
+        }
+        .www {
+            margin-left: 29%;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            color: blue;
+        }
+
+        .info{
+            color: rgb(190, 187, 187);
+        }
+
+        .brief{
+            color: black;
+            border: 2px black solid;
+            border-radius: 5px;
+            margin-top: 3%;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: white;
+        }
+
+        .roch{
+            align-items: center;
+            border: black solid thick;
+            margin-top: 2%;
+        }
+
+        .called{
+            padding-left: 2%;
+            margin-right: 2%;
+        }
+
+        .org{
+            padding: 10px;
+            font-size: 50px;
+            background-color: rgb(190, 187, 187);
+            margin-left: 10%;
+            margin-right: 10%;
+            border-radius: 5px;
+            border: black solid 2px;
+            margin-bottom: -20px;
+            margin-top: 3%;
+        }
+
+        .history{
+            font-size: 15px;
+            color: rgb(190, 187, 187);
+        }
+
+        .material{
+            margin-bottom: -3%;
+        }
+
+        .h11{
+            margin-bottom: 0%;
+        }
+
+        .street{
+            margin-top: 0%;
+            padding-bottom: 3%;
+        }
+        @media only screen and (max-width:600px) {
+         .box{
+            flex-direction: column;
+            }
+        .links1{
+            padding-right: 25%;
+            }
+        .unh{
+            margin-top: 3%;
+            }
+        .unhm{
+            margin-bottom: 2%;
+        }
+        .us{
+            padding-left: 2%;
+            padding-right:3%;
+        }
+        .m1{
+            margin-bottom: -33%;
+        }
+        .m2{
+            margin-bottom: -11%;
+        }
+        .roch{
+            width: 92%;
+            height: auto;
+        }
+        .photo.h5{
+            height: 150%;
+            width: 150%;
+        }
+        .unha{
+            padding-right: 25%;
+        }
+        .main-header{
+            padding: 19%;
+        }
+        .main-header-title{
+            font-size: 50px;
+            padding-top: 15%;
+        }
+        .material{
+            margin-bottom: 7%;
+        }
+        .street{
+            margin-bottom: -3%;
+        }
+        .this{
+            margin-top: 38%;
+            margin-bottom: 7%;
+        }
+        .called{
+            margin-bottom: 7%;
+        }
+         }
+
+         .fab{
+             color: white;
+         }
+    </style>
+    
+</head>
+
+<body class="w3-sand">
+    <div class="w3-top w3-large">
+        <div class="w3-top w3-padding-16 w3-black">
+          <div>
+            <a class="w3-col m2 w3-center w3-button w3-block w3-black nav w3-hide-medium w3-hide-small" href= "index.html">HOME</a>
+          </div>
+          <div>
+            <a class="w3-col m2 w3-center w3-button w3-block w3-black nav w3-hide-small w3-hide-medium" href="index2.html">HISTORIC ROCHESTER</a>
+          </div>
+          <div>
+            <a class="w3-col m2 w3-center w3-button w3-block w3-black nav w3-hide-small w3-hide-medium" href="index3.html">HISTORIC PRESERVATION</a>
+          </div>
+          <div>
+            <a class="w3-col m2 w3-center w3-button w3-block w3-black nav w3-hide-small w3-hide-medium" href="index4.html">HISTORIC DISTRICT</a>
+          </div>
+          <div>
+            <a class="w3-col m2 w3-center w3-button w3-block w3-black nav w3-hide-small w3-hide-medium" href="index5.html">AROUND THE COUNTRY</a>
+          </div>
+          <div>
+            <a href="index.html#where" class="w3-col m2 w3-center w3-button w3-block w3-black w3-hide-small w3-hide-medium">CONTACT US</a>
+          </div>
+          <div class="w3-dropdown-hover w3-hide-large w3-large">
+            <a href="index.html" class="w3-button w3-text-white w3-center">HOME</a>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="index2.html" class="w3-bar-item w3-button w3-center">HISTORIC ROCHESTER</a>
+                <a href="index3.html" class="w3-bar-item w3-button w3-center">HISTORIC PRESERVATION</a>
+                <a href="index4.html" class="w3-bar-item w3-button w3-center">HISTORIC DISTRICT</a>
+                <a href="index5.html" class="w3-bar-item w3-button w3-center">AROUND THE COUNTRY</a>
+                <a href="index.html#where" class="w3-bar-item w3-button w3-center">CONTACT US</a>
+            </div>
+        </div>
+    </div>
+</div> 
+    <div class="main-header">
+        <h1 class="main-header-title w3-text-white w3-jumbo w3-hide-medium w3-hide-small">Historic Rochester</h1>
+        <h1 class="main-header-title w3-text-white w3-hide-large">Historic Rochester</h1>
+    </div>
+    <p class="open w3-hide-small w3-hide-medium">This page of the website provides informational resources for readers on the history of Rochester New Hampshire.</p>
+    <div class="intro">
+    </div>
+    <a href="https://www.rochesternh.org/history-of-rochester/"> <h1 class="org unhm">Brief History of Rochester</h1> </a>
+    <div class="brief">
+        <img class="roch" src="img/h5.jpeg" alt= "Rochester">
+        <p class="called" > Rochester was originally called Norway Plains in 1722. The area was not settled until 1729. The main occupation of the settlers was Lumbering. “In addition to lumbering, economic vitality came to Rochester, due in part to being blessed with three rivers, the Cocheco, Salmon Falls and Isinglass.  These rivers provided fertile land for farming and water power for industrial growth.” </p>
+        <p><a class="history us" href="https://www.rochesternh.org/history-of-rochester/">Information and photo sourced from the Rochester Chamber of Commerce website</a></p>
+    </div>
+    <h1 class="more-info"> Where you can find more infomation about Rochester</h1>
+
+    <div class="box">
+        <div class="card">
+            <a href="https://www.rochesternh.net/historic-district-commission/pages/virtual-historic-map"> <h1 class="map"> The Rochester Historical Map</h1> </a>
+            <img class="photo" src="img/h3.png" alt="The Rochester Historical Map">
+            <p class="plan">
+                "The Planning & Development Department and Public Information Office collaborated to catalog and upload several hundred photos from the Rochester Historical Society into Google Earth. The project is viewable on a desktop or via a mobile device".
+            </p>
+            <a class="info" href="https://www.rochesternh.net/historic-district-commission/pages/virtual-historic-map">Information and photo sourced from the City of Rochester website</a>
+        </div>
+
+        <div class="card two unh">
+            <a href="https://www.loc.gov/item/01008064/"> <h1 class="map m2">Library of Congress</h1> </a>
+            <img class="photo h4 m1" src="img/h4.svg" alt="Library of Congress">
+            <p class="this">
+                This resource provides a collection of historical photos, books and maps about Rochester, New Hampshire. The maps on this website provided a view and “image” of how the City of Rochester NH has evolved over time. 
+            </p>
+            <a class="info" href="https://www.loc.gov/item/01008064/">Information and photo sourced from the Library of Congress website</a>
+        </div>
+        <div class="card unh">
+            <a href="https://www.nhmunicipal.org/town-city-article/architectural-jewels-rochester-new-hampshire-appreciating-urban-landscape"> <h1 class="map">The Architectural Jewels of Rochester</h1> </a>
+            <img class="photo h5" src="img/h11.jpeg" alt= "Rochester's old post office">
+            <p class="material" >This resource provides material including some adapted excerpts from a book called The Architectural Jewels of Rochester New Hampshire: A History of the Built Environment By Michael Behrendt, a former  Rochester, New Hampshire’s city planner. The material provides an insight into the historically Architecture that Rochester has to offer.</p>
+            <a class="info" href="https://www.nhmunicipal.org/town-city-article/architectural-jewels-rochester-new-hampshire-appreciating-urban-landscape"><p class="h11">Information sourced from the New Hampshire Municipal Association website</p></a>
+            <a class="info" href="http://www.rochestermainstreet.org/historic-photos.html"><p class="street">Photo sourced from the Rochester Main Street website</p></a>
+        </div>
+    </div>
+    <div class="links1">
+        <a class= "www info" href= "https://www.rochesternh.net/planning-development/slideshows/city-hall-annex-historic-documents-gallery"> <h1 class="w3-small">Main header photo sourced from the Rochesrer Planning website</h1></a>
+       <br>
+        <a class="virtual info" href= "https://www.rochesternh.net/historic-district-commission/pages/virtual-historic-map"> <h1 class="w3-small">Backround photo sourced from the Rochesrer Historic Map website</h1></a>
+    </div>
+    <div class="w3-center w3-black w3-padding-16 w3-large">
+        <a href= "https://www.facebook.com/groups/146756669388765//"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href= "https://twitter.com/rochester_nh"><i class="fab fa-twitter-square fa-2x"></i></a>
+    </div>
+
+</html>
